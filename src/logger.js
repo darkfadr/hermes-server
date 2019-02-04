@@ -1,6 +1,9 @@
 import winston, { format } from 'winston';
 require('winston-daily-rotate-file');
 
+// const path = `${__dirname}/logs`;
+// !fs.existsSync(path) && fs.mkdirSync(path)
+
 const logger = winston.createLogger({
   transports: [
     // new winston.transports.DailyRotateFile({

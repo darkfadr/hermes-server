@@ -1,7 +1,8 @@
 {
-	"presets": ["env"],
+	"presets": ["@babel/preset-env"],
 	"plugins": [
-		"add-module-exports"
+        "add-module-exports",
+        "@babel/plugin-proposal-class-properties"
 	],
 	"ignore": [
 		"node_modules/",

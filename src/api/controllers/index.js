@@ -1,5 +1,5 @@
-import UserController from './user_controller';
+import EmailController from './email_controller';
 
 export {
-  UserController
+  EmailController
 }

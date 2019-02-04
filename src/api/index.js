@@ -1,4 +1,5 @@
 import path from 'path';
+import http from 'http';
 import express from 'express';
 import helmet from 'helmet';
 import cors from 'cors';
@@ -22,4 +23,5 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.get('/', (req, res) => res.json(endpoints(app)))
 app.use('/api', routes);
 
-export default app;
+
+export default http.createServer(app);

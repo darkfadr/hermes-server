@@ -1,4 +1,4 @@
-# Sentry
+# Base Api
 
 This is the sample service to use as a starting point for building an API with node.js
 

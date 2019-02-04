@@ -1,8 +1,12 @@
 import express from 'express';
 import log from '../logger';
-import { UserController } from './controllers';
+import { EmailController } from './controllers';
 
 const temp = (req, res) => res.json({status: 'success', msg: 'Method not yet implemented'});
+const get = temp;
+const post = temp;
+const put = temp;
+
 const router = express.Router();
 
 router.map = routes => {
@@ -14,11 +18,18 @@ router.map = routes => {
 }
 
 router.map({
-  '/user/:id': {
-    get: UserController.findById,
-    post: ''
-  },
-  '/healthcheck': {get: ''}
+  '/healthcheck': {get},
+
+  '/config': {get},
+
+  '/email': {get, delete: temp},
+  '/email/:id': {get, delete: temp},
+  '/email/:id/html': {get},
+  '/email/:id/source': {get},
+  '/email/:id/download': {get},
+  '/email/:id/attachement/:filename': {get},
+  // '/email/:id/relay/:destination': {post}   //experimental
+
 });
 
 export default router;
