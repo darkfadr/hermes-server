@@ -1,6 +1,7 @@
-# Base Api
+# Hermes - SMTP Server and API
 
-This is the sample service to use as a starting point for building an API with node.js
+> This is a rewrite of MailDev from this [fork](https://github.com/darkfadr/hermes)
+> MailDev is a simple way to test your project's generated emails during development with an easy to use web interface that runs on your machine built on top of Node.js.
 
 ## Getting Started
 1. Create a `.env` file similar to the `.env.sample` file for RabbitMQ.
@@ -42,7 +43,7 @@ npm run build
 * [node](https://nodejs.org/en/)
 
 ## Contributing
-Send us a pull request on [bitbucket]
+Send us a pull request
 
 ## Versioning
 We use [SemVer](guide/how-tos/versioning.md) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
